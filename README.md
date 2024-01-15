@@ -8,6 +8,10 @@ Clone the repository to your local machine:
 bash
 Copy code
 git clone [https://github.com/shrihari143/Technical_Assignment_TensorGo_software]
+
+
+
+
 Step 2: Install Dependencies
 Navigate to both the client directory and the main directory and run:
 
