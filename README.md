@@ -38,11 +38,21 @@ or
 bash
 Copy code
 nodemon server.js
+
+
+
+
+
 Step 4: User Registration and Login
 After running the project, you can register and log in using the following credentials:
 
 Email: shriharichaurasia1431@gmail.com
 Password: 1234567890
+
+
+
+
+
 Step 5: Test Payment
 For testing payment functionality, use the following card number:
 
