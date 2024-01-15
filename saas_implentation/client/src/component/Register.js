@@ -21,7 +21,7 @@ const Register = () => {
 
       if (res.data.success) {
         message.success("Register Successfully!");
-        navigate("/login");
+        navigate("/");
       } else {
         message.error(res.data.message);
       }
@@ -52,7 +52,7 @@ const Register = () => {
             <Input type="password" onChange={(e) => setPassword(e.target.value)} />
           </Form.Item>
 
-          <Link to="/login" className="m-2">
+          <Link to="/" className="m-2">
             Already a user? Login here
           </Link>
 

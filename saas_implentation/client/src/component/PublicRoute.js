@@ -1,10 +1,16 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function PublicRoute({ children }) {
-  if (localStorage.getItem("token")) {
-    return <Navigate to="/" />;
-  } else {
-    return children;
-  }
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    
+    if (token) {
+      navigate("/hosted");
+    }
+  }, [navigate]);
+
+  return children;
 }

@@ -15,14 +15,14 @@ function App() {
     <BrowserRouter>
       <div className='main'>
         <Routes>
-        <Route exact path='/login' element={<PublicRoute>
+        <Route exact path='/' element={
                   <Login />
-                </PublicRoute>
+                
                 } />    
-        <Route exact path='/register' element={<PublicRoute>
+        <Route exact path='/register' element={
                   <Register />
-                </PublicRoute>} />       
-          <Route exact path='/' element={<Hosted />} />
+                } />       
+          <Route exact path='/hosted' element={<Hosted />} />
           <Route exact path='/success' element={<Success />} />
           <Route exact path='/failure' element={<Failure />} />         
         </Routes>

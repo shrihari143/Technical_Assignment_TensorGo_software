@@ -17,7 +17,7 @@ const Login = () => {
       if (res.data.success) {
         localStorage.setItem("token", res.data.token);
         message.success("Login Successfully");
-        navigate("/");
+        navigate("/hosted");
       } else {
         message.error(res.data.message);
       }
